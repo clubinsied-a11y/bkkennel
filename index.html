@@ -2,13 +2,45 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>BK KENNEL</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BK KENNEL 행복켄넬</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,"Malgun Gothic",sans-serif;background:#fff;color:#222}
+header{border-bottom:4px solid #0071ce;padding:16px;text-align:center}
+.logo{font-size:38px;font-weight:900;color:#003da5;letter-spacing:-1px}
+.logo span{color:#e31837}
+.sub{font-size:13px;color:#666;margin-top:2px}
+.hero{background:#f7f9ff;padding:26px 16px;text-align:center}
+.hero span{display:block;background:#ffe600;border-radius:999px;padding:8px 14px;margin:8px auto;max-width:540px;font-size:26px;font-weight:900;color:#003da5}
+.hero p{margin-top:10px;font-weight:700;color:#333}
+.grid{max-width:920px;margin:0 auto;padding:16px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:600px){.grid{grid-template-columns:1fr}}
+.card{border:1px solid #ddd;border-radius:14px;padding:16px;position:relative;background:#fff}
+.badge{position:absolute;top:10px;right:10px;padding:5px 10px;border-radius:999px;color:#fff;font-weight:900;font-size:12px;animation:blink 1.2s infinite}
+.hot{background:#e31837}.best{background:#0071ce}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.6}}
+.illus{height:110px;background:#eef4ff;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:42px;margin:10px 0}
+.card h2{font-size:20px}
+.card p{font-size:13px;color:#555;margin:6px 0;line-height:1.5}
+.price{font-size:22px;font-weight:900;color:#e31837;margin:8px 0}
+.btn{display:block;text-align:center;background:#0071ce;color:#fff;padding:11px;border-radius:999px;text-decoration:none;font-weight:800}
+footer{background:#111;color:#ddd;padding:22px 16px;text-align:center;font-size:13px;line-height:1.9;margin-top:20px}
+footer b{color:#fff}
+</style>
 </head>
 <body>
-<h1>BK KENNEL 행복켄넬</h1>
-<p>반려동물의 선택, 이동할 때 필수템 이동장</p>
-<p>시중보다 저렴한 유일한 곳</p>
-<p>150 250 300 350 400 450 550 PLUS</p>
-<p>전화 010-3658-5788</p>
+<header><div class="logo">BK <span>KENNEL</span></div><div class="sub">행복켄넬 · 신제품 이동장 전문</div></header>
+<div class="hero"><span>반려동물의 선택</span><span>이동할 때 필수템 이동장</span><span>시중보다 저렴한 유일한 곳</span><p>사이즈별로 골라서 바로 구매하세요</p></div>
+<main class="grid">
+<div class="card"><div class="illus">🧳</div><h2>행복켄넬 150</h2><p>소형 강아지 · 고양이 · 가벼운 이동</p><div class="price">39,000원</div><a class="btn" href="#">장바구니 담기</a></div>
+<div class="card"><div class="illus">🧳</div><h2>행복켄넬 250</h2><p>소형 · 데일리 이동용</p><div class="price">49,000원</div><a class="btn" href="#">장바구니 담기</a></div>
+<div class="card"><div class="illus">🧳</div><h2>행복켄넬 300</h2><p>중형 · 넉넉한 실내 공간</p><div class="price">59,000원</div><a class="btn" href="#">장바구니 담기</a></div>
+<div class="card"><div class="badge best">BEST ✨</div><div class="illus">🧳</div><h2>행복켄넬 350</h2><p>베스트 사이즈 · 병원 · 여행 인기</p><div class="price">69,000원</div><a class="btn" href="#">장바구니 담기</a></div>
+<div class="card"><div class="badge best">BEST ✨</div><div class="illus">🧳</div><h2>행복켄넬 400</h2><p>중대형 · 장거리 이동 안정감</p><div class="price">79,000원</div><a class="btn" href="#">장바구니 담기</a></div>
+<div class="card"><div class="badge best">BEST ✨</div><div class="illus">🧳</div><h2>행복켄넬 450</h2><p>대형 · 넓고 튼튼한 프리미엄</p><div class="price">89,000원</div><a class="btn" href="#">장바구니 담기</a></div>
+<div class="card"><div class="badge hot">HOT ✨</div><div class="illus">🧳</div><h2>행복켄넬 550 PLUS</h2><p>가장 큰 사이즈 · PLUS 전용 구성</p><div class="price">109,000원</div><a class="btn" href="#">장바구니 담기</a></div>
+</main>
+<footer><b>BK KENNEL 행복켄넬</b><br>전화 010-3658-5788<br>통신판매업 신고번호 확인 중<br>신제품 이동장 판매 전문몰</footer>
 </body>
 </html>
