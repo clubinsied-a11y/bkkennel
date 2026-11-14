@@ -7,40 +7,50 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:system-ui,"Malgun Gothic",sans-serif;background:#fff;color:#222}
-header{border-bottom:4px solid #0071ce;padding:16px;text-align:center}
-.logo{font-size:38px;font-weight:900;color:#003da5;letter-spacing:-1px}
-.logo span{color:#e31837}
-.sub{font-size:13px;color:#666;margin-top:2px}
-.hero{background:#f7f9ff;padding:26px 16px;text-align:center}
-.hero span{display:block;background:#ffe600;border-radius:999px;padding:8px 14px;margin:8px auto;max-width:540px;font-size:26px;font-weight:900;color:#003da5}
-.hero p{margin-top:10px;font-weight:700;color:#333}
-.grid{max-width:920px;margin:0 auto;padding:16px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;padding:12px 14px;z-index:10}
+.top{display:flex;justify-content:space-between;align-items:center;max-width:920px;margin:0 auto}
+.logo{font-size:28px;font-weight:900;color:#003da5}.logo span{color:#e31837}
+nav{display:flex;gap:12px;font-size:13px;font-weight:700;max-width:920px;margin:10px auto 0;overflow-x:auto;white-space:nowrap}
+nav a{color:#333;text-decoration:none}
+.hero{max-width:920px;margin:0 auto;padding:22px 14px}
+.hero h1{font-size:30px;line-height:1.35;font-weight:900}
+.hero h1 span{background:#ffe600;border-radius:999px;padding:2px 12px}
+.hero p{margin-top:10px;color:#555;line-height:1.6;font-size:14px}
+.finder{background:#f7f9ff;border-radius:16px;padding:16px;margin:14px}
+.finder h3{font-size:17px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.chip{background:#fff;border:1px solid #ddd;border-radius:999px;padding:8px 12px;font-size:13px;font-weight:700}
+.grid{max-width:920px;margin:0 auto;padding:14px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
 @media(max-width:600px){.grid{grid-template-columns:1fr}}
-.card{border:1px solid #ddd;border-radius:14px;padding:16px;position:relative;background:#fff}
-.badge{position:absolute;top:10px;right:10px;padding:5px 10px;border-radius:999px;color:#fff;font-weight:900;font-size:12px;animation:blink 1.2s infinite}
+.card{border:1px solid #e5e5e5;border-radius:16px;padding:14px;position:relative}
+.badge{position:absolute;top:10px;right:10px;padding:4px 10px;border-radius:999px;color:#fff;font-size:12px;font-weight:900}
 .hot{background:#e31837}.best{background:#0071ce}
-@keyframes blink{0%,100%{opacity:1}50%{opacity:.6}}
-.illus{height:110px;background:#eef4ff;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:42px;margin:10px 0}
-.card h2{font-size:20px}
-.card p{font-size:13px;color:#555;margin:6px 0;line-height:1.5}
-.price{font-size:22px;font-weight:900;color:#e31837;margin:8px 0}
-.btn{display:block;text-align:center;background:#0071ce;color:#fff;padding:11px;border-radius:999px;text-decoration:none;font-weight:800}
-footer{background:#111;color:#ddd;padding:22px 16px;text-align:center;font-size:13px;line-height:1.9;margin-top:20px}
+.illus{height:120px;background:#eef4ff;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:52px;margin:8px 0}
+.card h2{font-size:18px}.card p{font-size:13px;color:#555;margin:6px 0;line-height:1.6}
+.price{font-size:21px;font-weight:900;color:#e31837}.old{font-size:13px;color:#999;text-decoration:line-through}
+.btn{display:block;text-align:center;background:#0071ce;color:#fff;padding:11px;border-radius:999px;text-decoration:none;font-weight:800;margin-top:8px}
+.section{max-width:920px;margin:0 auto;padding:16px}
+.blue{background:#0071ce;color:#fff;border-radius:16px;padding:18px}
+.tip{border:1px solid #eee;border-radius:14px;padding:14px;margin-top:10px}
+.tip b{font-size:16px}
+footer{background:#111;color:#ddd;padding:24px 16px;text-align:center;font-size:13px;line-height:1.9;margin-top:20px}
 footer b{color:#fff}
 </style>
 </head>
 <body>
-<header><div class="logo">BK <span>KENNEL</span></div><div class="sub">행복켄넬 · 신제품 이동장 전문</div></header>
-<div class="hero"><span>반려동물의 선택</span><span>이동할 때 필수템 이동장</span><span>시중보다 저렴한 유일한 곳</span><p>사이즈별로 골라서 바로 구매하세요</p></div>
+<header><div class="top"><div class="logo">BK <span>KENNEL</span></div><div>🛒</div></div><nav><a href="#">전체 이동장</a><a href="#">사이즈 가이드</a><a href="#">구매 혜택</a><a href="#">사업자 정보</a></nav></header>
+<div class="hero"><h1>이동할 때 필수템 이동장<br><span>시중보다 저렴한 유일한 곳</span></h1><p>7가지 사이즈로 준비했어요. 우리 아이 몸무게에 맞는 이동장을 골라보세요.</p><div class="finder"><h3>🐾 사이즈를 골라 바로 담아보세요</h3><div class="chips"><span class="chip">150 · 최대 5kg</span><span class="chip">250 · 최대 7kg</span><span class="chip">300 · 최대 10kg</span><span class="chip">350 · 최대 12kg</span><span class="chip">400 · 최대 15kg</span><span class="chip">450 · 최대 20kg</span><span class="chip">550 PLUS · 최대 30kg</span></div></div></div>
 <main class="grid">
-<div class="card"><div class="illus">🧳</div><h2>행복켄넬 150</h2><p>소형 강아지 · 고양이 · 가벼운 이동</p><div class="price">39,000원</div><a class="btn" href="#">장바구니 담기</a></div>
-<div class="card"><div class="illus">🧳</div><h2>행복켄넬 250</h2><p>소형 · 데일리 이동용</p><div class="price">49,000원</div><a class="btn" href="#">장바구니 담기</a></div>
-<div class="card"><div class="illus">🧳</div><h2>행복켄넬 300</h2><p>중형 · 넉넉한 실내 공간</p><div class="price">59,000원</div><a class="btn" href="#">장바구니 담기</a></div>
-<div class="card"><div class="badge best">BEST ✨</div><div class="illus">🧳</div><h2>행복켄넬 350</h2><p>베스트 사이즈 · 병원 · 여행 인기</p><div class="price">69,000원</div><a class="btn" href="#">장바구니 담기</a></div>
-<div class="card"><div class="badge best">BEST ✨</div><div class="illus">🧳</div><h2>행복켄넬 400</h2><p>중대형 · 장거리 이동 안정감</p><div class="price">79,000원</div><a class="btn" href="#">장바구니 담기</a></div>
-<div class="card"><div class="badge best">BEST ✨</div><div class="illus">🧳</div><h2>행복켄넬 450</h2><p>대형 · 넓고 튼튼한 프리미엄</p><div class="price">89,000원</div><a class="btn" href="#">장바구니 담기</a></div>
-<div class="card"><div class="badge hot">HOT ✨</div><div class="illus">🧳</div><h2>행복켄넬 550 PLUS</h2><p>가장 큰 사이즈 · PLUS 전용 구성</p><div class="price">109,000원</div><a class="btn" href="#">장바구니 담기</a></div>
+<div class="card"><div class="illus">🧳</div><h2>BK 이동장 150</h2><p>소형 · 고양이 · 42 X 30 X 30 cm<br>최대 5kg · 가장 많이 찾는 사이즈</p><div><span class="old">52,000원</span> <span class="price">39,000원</span> 25% ↓</div><a class="btn" href="#">장바구니 담기</a></div>
+<div class="card"><div class="illus">🧳</div><h2>BK 이동장 250</h2><p>소형 · 48 X 32 X 32 cm<br>최대 7kg · 튼튼한 내구성</p><div><span class="old">64,000원</span> <span class="price">49,000원</span> 23% ↓</div><a class="btn" href="#">장바구니 담기</a></div>
+<div class="card"><div class="illus">🧳</div><h2>BK 이동장 300</h2><p>소형 · 중형 고양이 · 54 X 36 X 35 cm<br>최대 10kg · 넓은 출입구</p><div><span class="old">76,000원</span> <span class="price">59,000원</span> 22% ↓</div><a class="btn" href="#">장바구니 담기</a></div>
+<div class="card"><div class="badge best">BEST ★</div><div class="illus">🧳</div><h2>BK 이동장 350</h2><p>중소형 · 58 X 38 X 38 cm<br>최대 12kg · 가장 많이 찾는 사이즈</p><div><span class="old">89,000원</span> <span class="price">69,000원</span> 22% ↓</div><a class="btn" href="#">장바구니 담기</a></div>
+<div class="card"><div class="badge best">BEST ★</div><div class="illus">🧳</div><h2>BK 이동장 400</h2><p>중형 · 62 X 42 X 42 cm<br>최대 15kg · 넉넉한 실내 공간</p><div><span class="old">99,000원</span> <span class="price">79,000원</span> 20% ↓</div><a class="btn" href="#">장바구니 담기</a></div>
+<div class="card"><div class="badge best">BEST ★</div><div class="illus">🧳</div><h2>BK 이동장 450</h2><p>중형 · 강아지 · 68 X 46 X 46 cm<br>최대 20kg · 넓고 안정적인 구조</p><div><span class="old">113,000원</span> <span class="price">89,000원</span> 21% ↓</div><a class="btn" href="#">장바구니 담기</a></div>
+<div class="card"><div class="badge hot">HOT ★</div><div class="illus">🧳</div><h2>BK 이동장 550 PLUS</h2><p>대형 · 프리미엄 · 76 X 52 X 52 cm<br>최대 30kg · PLUS 전용 구성</p><div><span class="old">165,000원</span> <span class="price">129,000원</span> 22% ↓</div><a class="btn" href="#">장바구니 담기</a></div>
 </main>
-<footer><b>BK KENNEL 행복켄넬</b><br>전화 010-3658-5788<br>통신판매업 신고번호 확인 중<br>신제품 이동장 판매 전문몰</footer>
+<div class="section"><div class="blue"><h3>사이즈가 고민될 때</h3><p style="margin-top:8px;line-height:1.7">아이 몸무게 + 2~3kg 여유를 기준으로 골라보세요. 병원 갈 때 많이 쓰는 기준이에요.<br>· 150~300 : 소형 · 병원용<br>· 350~450 : 가장 많이 찾는 구간<br>· 550 PLUS : 대형견 프리미엄</p><p style="margin-top:10px;font-weight:800">사이즈 교환 문의 : 010-3658-5788 상담</p></div></div>
+<div class="section"><h3>이렇게 골라보세요</h3><div class="tip"><b>01 튼튼한 내구성</b><p>튼튼한 틀, 흔들림 적은 구조. 이동할 때 아이가 편해요.</p></div><div class="tip"><b>02 사이즈 교환 안내</b><p>사이즈가 맞지 않으면 전화로 교환 방법을 안내해요.</p></div><div class="tip"><b>03 이동 꿀팁</b><p>카드에 담아서 수수료를 고르고 장바구니에 담아보세요.</p></div></div>
+<footer><b>BK KENNEL 행복켄넬</b><br>행복켄넬 · 반려동물 이동장 전문 판매몰<br>신제품 이동장을 판매합니다. 대여 상품이 아니며, 새 제품 그대로 안전하게 보내드려요.<br><br>사업자 정보<br>상호: BK KENNEL 행복켄넬<br>대표 전화: 010-3658-5788<br>통신판매업 신고번호: 확인 중<br>상품 문의와 사이즈 상담은 전화로 도와드려요.<br><br>© BK KENNEL 행복켄넬. 반려동물 이동장 신제품 전문몰</footer>
 </body>
 </html>
